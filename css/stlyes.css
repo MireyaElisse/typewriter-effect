@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    background: url('https://imgs.search.brave.com/L9QcFVhLM1FGWrq4qLIaZRj7RWXrt7OqNHx9z31F3fg/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93YWxs/dXAubmV0L3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE1LzEyLzEy/NDA4My1za3lzY3Jh/cGVyLU5ld19Zb3Jr/X0NpdHktY2l0eS1s/YW5kc2NhcGUuanBn') no-repeat top center / cover;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40%;
+    padding: 0.3rem;
+}
+
+.h1, h2 {
+    font-weight: 300;
+    margin: 0.4rem;
+
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #d0bdf2;
+}
+.txt-type>.txt {  border-right: 0.2rem solid #d0bdf2;
+    animation: blinkTextCursor 500ms steps(40) infinite normal;
+}
+  
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: #d0bdf2;
+    }
+      
+
+    to {
+        border-right-color: transparent;
+    }
+}
+ 
+@media(min-width: 1200px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media(max-width: 800px) {
+    .cotainer {
+      padding: 0 1rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+h1 {
+    font-size: 2.5rem;
+}
+    h2 {
+        font-size: 1.5rem
+    }
+
+}
